@@ -30,13 +30,13 @@ var form = document.getElementById('form')
 
         var name=document.getElementById('name').value
         var body=document.getElementById('body').value
-        var body=document.getElementById('roll').value
+        var roll=document.getElementById('roll').value
 
         fetch("http://localhost:3000/posts/",{
             method:'POST',
             body:JSON.stringify({
                 name:name,
-                class:body,
+                Class:body,
                 roll_no:roll
             }),
             headers:{
